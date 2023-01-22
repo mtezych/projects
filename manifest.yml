@@ -1,0 +1,26 @@
+
+repos:
+
+  # GitHub:  https://github.com/mtezych
+  # Linux:   /home/mzych/repos
+  # macOS:   /Users/mzych/repos
+  # Windows: C:\Users\mzych\repos
+
+  - dest: util
+    url: https://github.com/mtezych/util
+    branch: master
+
+  - dest: tool
+    url: https://github.com/mtezych/tool
+    branch: master
+
+  - dest: plugin
+    url: https://github.com/mtezych/plugin
+    branch: master
+
+  - dest: projects
+    url: https://github.com/mtezych/projects
+    branch: plugin
+    symlink:
+      - source: CMakeLists.txt
+        target: projects/CMakeLists.txt
